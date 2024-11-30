@@ -1047,64 +1047,112 @@
                             <!-- END ICONBOX -->
 
                             <!-- TESTIMONIALS -->
-                            <div class="row-testimonials parallax-2">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="themesflat-spacer clearfix" data-desktop="80" data-mobile="60" data-smobile="60"></div>
-                                            <div class="themesflat-carousel-box has-arrows arrow-center arrow-circle offset-v-24 clearfix" data-gap="30" data-column="1" data-column2="1" data-column3="1" data-auto="true">
-                                                <div class="owl-carousel owl-theme">
-                                                    <div class="themesflat-testimonials style-1 max-width-70 align-center has-width w100 circle border-solid clearfix">
-                                                        <div class="testimonial-item">
-                                                            <div class="inner">
-                                                                <div class="icon-wrap">
-                                                                   <i class="fa fa-quote-left"></i>
-                                                                </div>
-                                                                <blockquote class="text">
-                                                                    <p>“  ”</p>
-                                                                    <div class="sep has-width w80 accent-bg clearfix"></div>
-                                                                    <h6 class="name">Kotitse</h6>
-                                                                </blockquote>
-                                                            </div>
-                                                        </div>
-                                                    </div><!-- /.themesflat-testimonials --> 
-                                                    <div class="themesflat-testimonials style-1 max-width-70 align-center has-width w100 circle border-solid clearfix">
-                                                        <div class="testimonial-item">
-                                                            <div class="inner">
-                                                                <div class="icon-wrap">
-                                                                   <i class="fa fa-quote-left"></i>
-                                                                </div>
-                                                                <blockquote class="text">
-                                                                    <p>“ A team that understands cost efficiency and working within a client's budget. I was impressed with the turnkey services presented on the project and the level of management, I had a tight budget for my building project and was not sure that the funds I had would complete, i found Gomze through a friend who worked with them before, they walked me through the different options we could go for and planned within costs, its been a year now and the structure is still standing with no issues. I still refer them to anyone who wants services.
-                                                                        ,”</p>
-                                                                    <div class="sep has-width w80 accent-bg clearfix"></div>
-                                                                    <h6 class="name">Kotitse</h6>
-                                                                </blockquote>
-                                                            </div>
-                                                        </div>
-                                                    </div><!-- /.themesflat-testimonials --> 
-                                                    <div class="themesflat-testimonials style-1 max-width-70 align-center has-width w100 circle border-solid clearfix">
-                                                        <div class="testimonial-item">
-                                                            <div class="inner">
-                                                                <div class="icon-wrap">
-                                                                   <i class="fa fa-quote-left"></i>
-                                                                </div>
-                                                                <blockquote class="text">
-                                                                    <p>“ The company performed well under pressure when i invited them for a quote on work that a one month given the urgency of our project. I was impressed with the level of workmans executions. We needed a team that could live up to the moment and Gomze delivered
-                                                                        ”</p>
-                                                                    <div class="sep has-width w80 accent-bg clearfix"></div>
-                                                                    <h6 class="name">Mpho</h6>
-                                                                </blockquote>
-                                                            </div>
-                                                        </div>
-                                                    </div><!-- /.themesflat-testimonials -->                                                    
-                                                </div>
-                                            </div><!-- /.themesflat-carousel-box -->
-                                            <div class="themesflat-spacer clearfix" data-desktop="68" data-mobile="60" data-smobile="60"></div>
-                                        </div><!-- /.col-md-12 -->
-                                    </div><!-- /.row -->
-                                </div><!-- /.container -->
-                            </div>
+                            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testimonials</title>
+    <style>
+        .testimonials-section {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        .testimonials-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .testimonials-header h2 {
+            color: #333;
+            font-size: 2.5rem;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        .testimonials-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background-color: #f9f9f9;
+            width: 350px;
+            padding: 2rem;
+            border-radius: 10px;
+            border: 1px solid #e9e9e9;
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: #333;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        .testimonial-author {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .author-name {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.25rem;
+        }
+
+        .author-role {
+            color: #777;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="testimonials-section">
+        <div class="testimonials-header">
+            <h2>Testimonials</h2>
+        </div>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <p class="testimonial-text">An extraordinary journey of collaboration that redefined our understanding of creative problem-solving and innovative strategies.</p>
+                <div class="testimonial-author">
+                    <span class="author-name">Rachel Green</span>
+                    <span class="author-role">Creative Director</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <p class="testimonial-text">Their approach is nothing short of revolutionary—blending cutting-edge techniques with profound strategic insights.</p>
+                <div class="testimonial-author">
+                    <span class="author-name">Alex Rodriguez</span>
+                    <span class="author-role">Innovation Lead</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <p class="testimonial-text">A transformative experience that goes beyond traditional consulting—they truly become an extension of your team.</p>
+                <div class="testimonial-author">
+                    <span class="author-name">Morgan Taylor</span>
+                    <span class="author-role">Strategy Consultant</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
                             <!-- END TESTIMONIALS -->
 
                             <!-- QUOTE -->
@@ -1121,7 +1169,6 @@
                                                         </div>
                                                         <div class="button-wrap has-icon icon-left">
                                                             <a href="#" class="themesflat-button bg-white small"><span>(+27) 12 883 8875 <span class="icon"><i class="autora-icon-phone-contact"></i></span></span></a>
-                                                            <a href="#" class="themesflat-button bg-white small"><span>(+27) 12 883 8875<span class="icon"><i class="autora-icon-phone-contact"></i></span></span></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1133,7 +1180,6 @@
                             </div>
                             <!-- END QUOTE -->
 
-                            <!-- TABS -->
                             <div class="row-tabs">
                                 <div class="container">
                                     <div class="row">
@@ -1170,7 +1216,7 @@
                                                                     <div class="inner">
                                                                         <span class="item">
                                                                             <span class="icon"><i class="fa fa-check-square"></i></span>
-                                                                            <span class="text">We have successfully completed projects in numerous provinces.</span>
+                                                                            <span class="text">We have successfully completed projects in numerous states.</span>
                                                                         </span>
                                                                     </div>
                                                                 </div><!-- /.themeslat-list -->
@@ -1178,36 +1224,7 @@
                                                                     <div class="inner">
                                                                         <span class="item">
                                                                             <span class="icon"><i class="fa fa-check-square"></i></span>
-                                                                            <span class="text">We is licensed to perform general contracting work in most provinces. </span>
-                                                                        </span>
-                                                                    </div>
-                                                                </div><!-- /.themeslat-list -->
-                                                                <div class="themesflat-list has-icon style-1 icon-left ofset-padding-32 clearfix">
-                                                                    <div class="inner">
-                                                                        <span class="item">
-                                                                            <span class="icon"><i class="fa fa-check-square"></i></span>
-                                                                            <span class="text">We will be open to obtaining new licensing if an opportunity arises</span>
-                                                                        </span>
-                                                                    </div>
-                                                                </div><!-- /.themeslat-list -->                                                        
-                                                            </div>
-                                                        </div><!-- /.tab-content -->
-                                                        <div class="tab-content">
-                                                            <div class="item-content">                                                            
-                                                                <p>Our focus is to exceed your goals, meet your timelines and successfully manage your budget. We provide our clients with top-notch general contracting, construction management, site surveys and design build services.</p>
-                                                                <div class="themesflat-list has-icon style-1 icon-left ofset-padding-32 clearfix">
-                                                                    <div class="inner">
-                                                                        <span class="item">
-                                                                            <span class="icon"><i class="fa fa-check-square"></i></span>
-                                                                            <span class="text">We have successfully completed projects in provinces.</span>
-                                                                        </span>
-                                                                    </div>
-                                                                </div><!-- /.themeslat-list -->
-                                                                <div class="themesflat-list has-icon style-1 icon-left ofset-padding-32 clearfix">
-                                                                    <div class="inner">
-                                                                        <span class="item">
-                                                                            <span class="icon"><i class="fa fa-check-square"></i></span>
-                                                                            <span class="text">We is licensed to perform general contracting work in most provinces. </span>
+                                                                            <span class="text">We is licensed to perform general contracting work in most states. </span>
                                                                         </span>
                                                                     </div>
                                                                 </div><!-- /.themeslat-list -->
@@ -1228,7 +1245,7 @@
                                                                     <div class="inner">
                                                                         <span class="item">
                                                                             <span class="icon"><i class="fa fa-check-square"></i></span>
-                                                                            <span class="text">We have successfully completed projects in numerous provinces.</span>
+                                                                            <span class="text">We have successfully completed projects in numerous states.</span>
                                                                         </span>
                                                                     </div>
                                                                 </div><!-- /.themeslat-list -->
@@ -1236,7 +1253,36 @@
                                                                     <div class="inner">
                                                                         <span class="item">
                                                                             <span class="icon"><i class="fa fa-check-square"></i></span>
-                                                                            <span class="text">We is licensed to perform general contracting work in most provinces. </span>
+                                                                            <span class="text">We is licensed to perform general contracting work in most states. </span>
+                                                                        </span>
+                                                                    </div>
+                                                                </div><!-- /.themeslat-list -->
+                                                                <div class="themesflat-list has-icon style-1 icon-left ofset-padding-32 clearfix">
+                                                                    <div class="inner">
+                                                                        <span class="item">
+                                                                            <span class="icon"><i class="fa fa-check-square"></i></span>
+                                                                            <span class="text">We will be open to obtaining new licensing if an opportunity arises</span>
+                                                                        </span>
+                                                                    </div>
+                                                                </div><!-- /.themeslat-list -->                                                        
+                                                            </div>
+                                                        </div><!-- /.tab-content -->
+                                                        <div class="tab-content">
+                                                            <div class="item-content">                                                            
+                                                                <p>Our focus is to exceed your goals, meet your timelines and successfully manage your budget. We provide our clients with top-notch general contracting, construction management, site surveys and design build services.</p>
+                                                                <div class="themesflat-list has-icon style-1 icon-left ofset-padding-32 clearfix">
+                                                                    <div class="inner">
+                                                                        <span class="item">
+                                                                            <span class="icon"><i class="fa fa-check-square"></i></span>
+                                                                            <span class="text">We have successfully completed projects in numerous states.</span>
+                                                                        </span>
+                                                                    </div>
+                                                                </div><!-- /.themeslat-list -->
+                                                                <div class="themesflat-list has-icon style-1 icon-left ofset-padding-32 clearfix">
+                                                                    <div class="inner">
+                                                                        <span class="item">
+                                                                            <span class="icon"><i class="fa fa-check-square"></i></span>
+                                                                            <span class="text">We is licensed to perform general contracting work in most states. </span>
                                                                         </span>
                                                                     </div>
                                                                 </div><!-- /.themeslat-list -->
@@ -1254,7 +1300,6 @@
                                                 </div><!-- /.themesflat-tabs -->
                                             </div><!-- /.themesflat-content-box -->                                                
                                         </div><!-- /.col-md-6 -->
-
                                         <div class="col-md-6">
                                             <div class="themesflat-spacer clearfix" data-desktop="0" data-mobile="0" data-smobile="35"></div>
                                             <div class="themesflat-content-box" data-margin="0 0 0 18px" data-mobilemargin="0 0 0 0">
@@ -1265,27 +1310,31 @@
                                                 <div class="themesflat-spacer clearfix" data-desktop="38" data-mobile="35" data-smobile="35"></div>
                                                 <div class="themesflat-accordions style-1 has-icon icon-left iconstyle-1 clearfix">
                                                     <div class="accordion-item active">
-                                                        <h3 class="accordion-heading"><span class="inner">What services does your company offer?</span></h3>
+                                                        <h3 class="accordion-heading"><span class="inner">Are there any hosting companies you recommend?</span></h3>
                                                         <div class="accordion-content">
-                                                            <div>We provide construction, renovation, and project management services, including residential, commercial, and industrial developments.</div>
+                                                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</div>
                                                         </div>
                                                     </div><!-- /.accordion-item -->
                                                     <div class="accordion-item">
-                                                        <h3 class="accordion-heading"><span class="inner">Where are you located, and which areas do you serve?</span></h3>
+                                                        <h3 class="accordion-heading"><span class="inner">We use technology to do the job more quickly</span></h3>
                                                         <div class="accordion-content">
-                                                            <div>We are based in South Africa and serve all provinces.</div>
+                                                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</div>
                                                         </div>
                                                     </div><!-- /.accordion-item -->
                                                     <div class="accordion-item ">
-                                                        <h3 class="accordion-heading"><span class="inner">How long has your company been in business?
-                                                        </span></h3>
+                                                        <h3 class="accordion-heading"><span class="inner">Employees are continually trained on safety issues</span></h3>
                                                         <div class="accordion-content">
-                                                            <div>We have been operating for 10 years, delivering quality projects to satisfied clients.</div>
+                                                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</div>
                                                         </div>
                                                     </div><!-- /.accordion-item -->
                                                 </div><!-- /.themesflat-accordion -->
                                             </div><!-- /.themesflat-content-box -->                                                
                                         </div><!-- /.col-md-6 -->
+                                    </div><!-- /.row -->
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="themesflat-spacer clearfix" data-desktop="0" data-mobile="0" data-smobile="0"></div>
+                                        </div><!-- /.col-md-12 -->
                                     </div><!-- /.row -->
                                 </div><!-- /.container -->
                             </div>
@@ -1298,7 +1347,6 @@
                                         <div class="col-md-12">
                                             <div class="themesflat-spacer clearfix" data-desktop="83" data-mobile="60" data-smobile="60"></div>
                                             <div class="themesflat-carousel-box clearfix" data-gap="5" data-column="5" data-column2="3" data-column3="2" data-auto="true">
-                                                
                                             </div><!-- /.themesflat-carousel-box -->
                                             <div class="themesflat-spacer clearfix" data-desktop="66" data-mobile="60" data-smobile="60"></div>
                                         </div><!-- /.col-md-12 -->
@@ -1322,9 +1370,7 @@
                                 <p>
                                     <img src="assets/img/logo-white@2x.png" alt="Image" width="170" height="34">
                                 </p>
-
                                 <p class="margin-bottom-15">We have over 15 years of experien able to help you 24 hours a day.</p>
-
                                 <ul>
                                     <li>
                                         <div class="inner">
@@ -1332,14 +1378,12 @@
                                             <span class="text">5th Floor, Bloukrans Building<span class="sl">  Lynnwood, Pretoria</span></span>
                                         </div>
                                     </li>
-
                                     <li>
                                         <div class="inner">
                                             <span class="fa fa-phone"></span>
                                             <span class="text">CALL US : +27 12 883 8875</span>
                                         </div>
                                     </li>
-
                                     <li class="margin-top-7">
                                         <div class="inner">
                                             <span class=" font-size-14 fa fa-envelope"></span>
@@ -1352,41 +1396,8 @@
                         </div><!-- /.widget_text -->
                         <div class="themesflat-spacer clearfix" data-desktop="0" data-mobile="0" data-smobile="35"></div>
                     </div><!-- /.col -->
-
                     <div class="col span_1_of_3">
-                        <div class="themesflat-spacer clearfix" data-desktop="0" data-mobile="0" data-smobile="0"></div>
-
-                        <div class="widget widget_lastest">
-                            <h2 class="widget-title"><span>RECENT POSTS</span></h2>
-                            <ul class="lastest-posts data-effect clearfix">
-                                <li class="clearfix">
-                                    <div class="thumb data-effect-item has-effect-icon">
-                                        <img src="assets/img/news/post-1-65x65.jpg" alt="Image">
-                                        <div class="overlay-effect bg-color-2"></div>
-                                        <div class="elm-link">
-                                            <a href="page-blog-single.html" class="icon-2"></a>
-                                        </div>
-                                    </div>
-                                    <div class="text">
-                                        <h3><a href="page-blog-single.html">SMART BUILDING WITH CONCRETE SUSTAINABLE</a></h3>
-                                        <span class="post-date"><span class="entry-date">29 June 2018</span></span>
-                                    </div>
-                                </li>
-                                <li class="clearfix">
-                                    <div class="thumb data-effect-item has-effect-icon">
-                                        <img src="assets/img/news/post-2-65x65.jpg" alt="Image">
-                                        <div class="overlay-effect bg-color-2"></div>
-                                        <div class="elm-link">
-                                            <a href="page-blog-single.html" class="icon-2"></a>
-                                        </div>
-                                    </div>
-                                    <div class="text">
-                                        <h3><a href="page-blog-single.html">HI-TECH WOODEN HOUSE BUILT WITHOUT GLUE</a></h3>
-                                        <span class="post-date"><span class="entry-date">31 June 2018</span></span>
-                                    </div>
-                                </li>                                
-                            </ul>
-                        </div><!-- /.widget_lastest -->                       
+                        <div class="themesflat-spacer clearfix" data-desktop="0" data-mobile="0" data-smobile="0"></div>                 
                     </div><!-- /.col -->
 
                     <!-- /.col -->
