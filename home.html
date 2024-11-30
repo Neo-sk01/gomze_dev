@@ -755,7 +755,18 @@
                                                 </div>                                                
                                             </div>
                                             <div class="themesflat-spacer clearfix" data-desktop="30" data-mobile="35" data-smobile="35"></div>
-                                            <div class="themesflat-carousel-box clearfix" data-gap="30" data-column="4" data-column2="2" data-column3="1" data-auto="false">
+                                            <div class="themesflat-carousel-box clearfix" 
+                                                data-gap="30" 
+                                                data-column="4" 
+                                                data-column2="2" 
+                                                data-column3="1" 
+                                                data-auto="true"
+                                                data-loop="true"
+                                                data-autoplay="true"
+                                                data-autoplayTimeout="1000"   <!-- 1 second interval -->
+                                                data-smartSpeed="500"         <!-- Fast but smooth transition -->
+                                                data-nav="true"
+                                                data-dots="true">
                                                 <div class="owl-carousel owl-theme">
                                                     <div class="themesflat-project style-1 data-effect  clearfix">
                                                         <div class="project-item">
@@ -869,9 +880,7 @@
                                                                     <img src="assets/img/project/project-4-440x280.jpg" alt="Image">
                                                                     <div class="text-wrap text-center">
                                                                         <h5 class="heading"><a href="#"></a></h5>
-                                                                       
                                                                     </div>
-                                                                    
                                                                     <div class="overlay-effect bg-color-3"></div>
                                                                 </div>
                                                             </div>
@@ -880,9 +889,6 @@
                                                 </div>
                                             </div><!-- /.themesflat-carousel-box -->
                                             <div class="themesflat-spacer clearfix" data-desktop="41" data-mobile="35" data-smobile="35"></div>
-                                            <div class="elm-button text-center">
-                                                <a href="#" class="themesflat-button bg-accent">ALL PROJECTS </a>
-                                            </div>
                                             <div class="themesflat-spacer clearfix" data-desktop="73" data-mobile="60" data-smobile="60"></div>
                                         </div><!-- /.col-md-12 -->
                                     </div><!-- /.row -->
@@ -908,7 +914,18 @@
                                                 </div>                                                
                                             </div>
                                             <div class="themesflat-spacer clearfix" data-desktop="30" data-mobile="35" data-smobile="35"></div>
-                                            <div class="themesflat-carousel-box clearfix" data-gap="30" data-column="4" data-column2="2" data-column3="1" data-auto="false">
+                                            <div class="themesflat-carousel-box clearfix" 
+                                                data-gap="30" 
+                                                data-column="4" 
+                                                data-column2="2" 
+                                                data-column3="1" 
+                                                data-auto="true"
+                                                data-loop="true"
+                                                data-autoplay="true"
+                                                data-autoplayTimeout="1000"   <!-- 1 second interval -->
+                                                data-smartSpeed="500"         <!-- Fast but smooth transition -->
+                                                data-nav="true"
+                                                data-dots="true">
                                                 <div class="owl-carousel owl-theme">
                                                     <div class="themesflat-project style-1 data-effect  clearfix">
                                                         <div class="project-item">
@@ -1019,9 +1036,6 @@
                                                 </div>
                                             </div><!-- /.themesflat-carousel-box -->
                                             <div class="themesflat-spacer clearfix" data-desktop="41" data-mobile="35" data-smobile="35"></div>
-                                            <div class="elm-button text-center">
-                                                <a href="#" class="themesflat-button bg-accent">ALL PROJECTS </a>
-                                            </div>
                                             <div class="themesflat-spacer clearfix" data-desktop="73" data-mobile="60" data-smobile="60"></div>
                                         </div><!-- /.col-md-12 -->
                                     </div><!-- /.row -->
@@ -1541,6 +1555,117 @@
 <script src="includes/rev-slider/js/extensions/revolution.extension.parallax.min.js"></script>
 <script src="includes/rev-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
 <script src="includes/rev-slider/js/extensions/revolution.extension.video.min.js"></script>
+
+<script>
+$(document).ready(function() {
+    // Initialize Featured Projects carousel (first section)
+    $('.row-project:first .owl-carousel').owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 1000,    // 1 second interval
+        autoplayHoverPause: true,
+        smartSpeed: 500,          // Fast but smooth transition
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 4
+            }
+        },
+        navText: [
+            '<i class="fa fa-angle-left"></i>',
+            '<i class="fa fa-angle-right"></i>'
+        ]
+    });
+
+    // Initialize Projects carousel (second section)
+    $('.row-project:last .owl-carousel').owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 1000,    // 1 second interval
+        autoplayHoverPause: true,
+        smartSpeed: 500,          // Fast but smooth transition
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 4
+            }
+        },
+        navText: [
+            '<i class="fa fa-angle-left"></i>',
+            '<i class="fa fa-angle-right"></i>'
+        ]
+    });
+});
+</script>
+
+<!-- Add these styles to customize navigation arrows and dots -->
+<style>
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+    padding: 0 20px;
+}
+
+.owl-prev, .owl-next {
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.8) !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto;
+    transition: all 0.3s ease;
+}
+
+.owl-prev:hover, .owl-next:hover {
+    background: rgba(255,255,255,1) !important;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.owl-dot span {
+    width: 10px;
+    height: 10px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active span {
+    background: rgba(255,255,255,1);
+}
+</style>
 
 </body>
 </html>
