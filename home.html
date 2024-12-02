@@ -582,148 +582,64 @@
                             <!-- END ICONBOX -->
                             
                             <!-- ABOUT -->
-                            <style>
-                                :root {
-                                    --primary-color: #2c3e50;
-                                    --secondary-color: #3498db;
-                                    --accent-color: #27ae60;
-                                }
-                            
-                                .geometric-section {
-                                    position: relative;
-                                    overflow: hidden;
-                                }
-                            
-                                .geometric-background {
-                                    position: absolute;
-                                    top: 0;
-                                    left: 0;
-                                    width: 100%;
-                                    height: 100%;
-                                    background-color: #f8f9fa;
-                                    opacity: 0.5;
-                                    clip-path: polygon(0 0, 60% 0, 40% 100%, 0 100%);
-                                    z-index: -1;
-                                }
-                            
-                                .geometric-content {
-                                    display: flex;
-                                    align-items: center;
-                                    min-height: 600px;
-                                }
-                            
-                                .geometric-card {
-                                    background: white;
-                                    border-radius: 15px;
-                                    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-                                    padding: 40px;
-                                    transition: all 0.3s ease;
-                                }
-                            
-                                .geometric-card:hover {
-                                    transform: translateY(-10px);
-                                    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-                                }
-                            
-                                .feature-icon {
-                                    font-size: 2.5rem;
-                                    color: var(--secondary-color);
-                                    margin-bottom: 15px;
-                                    transition: transform 0.3s ease;
-                                }
-                            
-                                .feature-item:hover .feature-icon {
-                                    transform: scale(1.2) rotate(10deg);
-                                }
-                            
-                                .diagonal-separator {
-                                    height: 3px;
-                                    width: 50px;
-                                    background: var(--secondary-color);
-                                    margin: 15px auto;
-                                    transform: skew(-15deg);
-                                }
-                            
-                                .cta-button {
-                                    position: relative;
-                                    overflow: hidden;
-                                    background-color: var(--secondary-color);
-                                    color: white;
-                                    border: none;
-                                    padding: 12px 30px;
-                                    border-radius: 30px;
-                                    transition: all 0.3s ease;
-                                }
-                            
-                                .cta-button::before {
-                                    content: '';
-                                    position: absolute;
-                                    top: 0;
-                                    left: -100%;
-                                    width: 100%;
-                                    height: 100%;
-                                    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.612), transparent);
-                                    transition: all 0.5s ease;
-                                }
-                            
-                                .cta-button:hover::before {
-                                    left: 100%;
-                                }
-                            
-                                .cta-button:hover {
-                                    transform: scale(1.05);
-                                    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-                                }
-                            </style>
-                            
-                            <div class="row-about geometric-section">
-                                <div class="geometric-background"></div>
+                            <div class="row-about">
                                 <div class="container-fluid">
-                                    <div class="row equalize sm-equalize-auto geometric-content">
-                                        <div class="col-md-6 d-flex align-items-center justify-content-center p-5">
-                                            <div class="text-center">
-                                                <div class="mb-4">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity text-primary">
-                                                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-                                                    </svg>
+                                    <div class="row equalize sm-equalize-auto">
+                                        <div class="col-md-6 half-background style-1">
+                                            <img src="assets/img/gallery/welcometogomze(Left ColumnIMG).png" alt="About Gomze Developments">
+                                        </div><!-- /.col-md-6 -->
+                                        <div class="col-md-6 bg-light-grey">
+                                            <div class="themesflat-spacer clearfix" data-desktop="64" data-mobile="60" data-smobile="60"></div>
+                                            <div class="themesflat-content-box clearfix" data-margin="0 25% 0 4.5%" data-mobilemargin="0 0 0 4.5%">
+                                                <div class="themesflat-headings style-1 clearfix">
+                                                    <h2 class="heading">WELCOME TO GOMZE DEVELOPMENTS</h2>
+                                                    <div class="sep has-width w80 accent-bg margin-top-11 clearfix"></div>                                               
+                                                    <p class="sub-heading margin-top-30">Gomze Developments is your trusted partner in construction project management and project funding. We specialize in:</p>
                                                 </div>
-                                                <h1 class="display-6 mb-3 text-dark">Gomze Developments</h1>
-                                                <p class="lead text-muted">Precision Engineering, Uncompromising Quality</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 d-flex align-items-center justify-content-center p-5">
-                                            <div class="geometric-card w-100">
-                                                <div class="text-center mb-4">
-                                                    <h2 class="text-dark">Our Core Strengths</h2>
-                                                    <div class="diagonal-separator"></div>
+                                                <div class="themesflat-spacer clearfix" data-desktop="26" data-mobile="35" data-smobile="35"></div>
+                                                <div class="content-list">
+                                                    <div class="themesflat-list has-icon style-1 icon-left clearfix">
+                                                        <div class="inner">
+                                                            <span class="item">
+                                                                <span class="icon"><i class="fa fa-check-square"></i></span>
+                                                                <span class="text">Comprehensive Construction Project Management</span>
+                                                            </span>
+                                                        </div>
+                                                    </div><!-- /.themeslat-list -->
+                                                    <div class="themesflat-list has-icon style-1 icon-left clearfix">
+                                                        <div class="inner">
+                                                            <span class="item">
+                                                                <span class="icon"><i class="fa fa-check-square"></i></span>
+                                                                <span class="text">Innovative Project Funding Solutions</span>
+                                                            </span>
+                                                        </div>
+                                                    </div><!-- /.themeslat-list -->
+                                                    <div class="themesflat-list has-icon style-1 icon-left clearfix">
+                                                        <div class="inner">
+                                                            <span class="item">
+                                                                <span class="icon"><i class="fa fa-check-square"></i></span>
+                                                                <span class="text">Strategic Planning and Execution</span>
+                                                            </span>
+                                                        </div>
+                                                    </div><!-- /.themeslat-list -->
+                                                    <div class="themesflat-list has-icon style-1 icon-left clearfix">
+                                                        <div class="inner">
+                                                            <span class="item">
+                                                                <span class="icon"><i class="fa fa-check-square"></i></span>
+                                                                <span class="text">End-to-End Project Development Support</span>
+                                                            </span>
+                                                        </div>
+                                                    </div><!-- /.themeslat-list -->
+                                                </div><!-- /.content-list -->
+                                                <div class="themesflat-spacer clearfix" data-desktop="42" data-mobile="35" data-smobile="35"></div>
+                                                <div class="elm-button">
+                                                    <a href="#" class="themesflat-button bg-white" style="border-radius: 25px;">GET IN TOUCH</a>
                                                 </div>
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <div class="feature-item mb-3 d-flex align-items-center">
-                                                            <div class="feature-icon me-3">✓</div>
-                                                            <span>Completing projects on time & Following budget guidelines</span>
-                                                        </div>
-                                                        <div class="feature-item mb-3 d-flex align-items-center">
-                                                            <div class="feature-icon me-3">✓</div>
-                                                            <span>Elevated quality of workmanship</span>
-                                                        </div>
-                                                        <div class="feature-item mb-3 d-flex align-items-center">
-                                                            <div class="feature-icon me-3">✓</div>
-                                                            <span>Meeting diverse supplier requirements</span>
-                                                        </div>
-                                                        <div class="feature-item d-flex align-items-center">
-                                                            <div class="feature-icon me-3">✓</div>
-                                                            <span>Implementing appropriate safety precautions and procedures</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="text-center mt-4">
-                                                    <button class="cta-button">Get in Touch</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                            </div><!-- /.themesflat-content-box --> 
+                                            <div class="themesflat-spacer clearfix" data-desktop="75" data-mobile="60" data-smobile="60"></div>
+                                        </div><!-- /.col-md-6 -->
+                                    </div><!-- /.row -->
+                                </div><!-- /.container-fluid -->
                             </div>
                             <!-- END ABOUT -->
 
@@ -1021,8 +937,6 @@
         </div>
     </div>
 </section>
-
-
 <!-- END PROJECTS -->
 
                             <!-- ICONBOX -->
@@ -1130,7 +1044,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Testimonials</title>
+    <title>TESTIMONIALS</title>
     <style>
         .testimonials-section {
             max-width: 1200px;
@@ -1202,7 +1116,7 @@
 <body>
     <div class="testimonials-section">
         <div class="testimonials-header">
-            <h2>Testimonials</h2>
+            <h2>TESTIMONIALS</h2>
         </div>
         <div class="testimonials-container">
             <div class="testimonial-card">
