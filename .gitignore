@@ -1,0 +1,14 @@
+# Ignore the .git directory to prevent deployment issues
+.git/
+.github/
+node_modules/
+
+# Ignore IDE/editor configuration files
+.vscode/
+
+# Ignore any cache files, temporary files, and system-specific files
+*.log
+*.DS_Store
+Thumbs.db
+
+# Ignore cPanel specific files (if you don't want to version control these)

@@ -1,0 +1,30 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/gomzevfh/public_html/ict.gomze.co.za/ 
+    - /bin/cp -R assets $DEPLOYPATH   
+    - /bin/cp -R css $DEPLOYPATH      
+    - /bin/cp -R font $DEPLOYPATH    
+    - /bin/cp -R icon $DEPLOYPATH      
+    - /bin/cp -R js $DEPLOYPATH
+    - /bin/cp -R .vscode $DEPLOYPATH
+    - /bin/cp -R contact $DEPLOYPATH
+    - /bin/cp -R includes $DEPLOYPATH       
+    - /bin/cp 404.html $DEPLOYPATH
+    - /bin/cp about-us.html $DEPLOYPATH
+    - /bin/cp blog-single.html $DEPLOYPATH
+    - /bin/cp blog-standard.html $DEPLOYPATH
+    - /bin/cp 'case-single 2.html' $DEPLOYPATH 
+    - /bin/cp case-single.html $DEPLOYPATH
+    - /bin/cp case-studies.html $DEPLOYPATH
+    - /bin/cp consultation.html $DEPLOYPATH
+    - /bin/cp page-about.html $DEPLOYPATH
+    - /bin/cp index.html.html $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp page-contact-2.html $DEPLOYPATH
+    - /bin/cp page-projects.html $DEPLOYPATH
+    - /bin/cp style.css $DEPLOYPATH
+    - /bin/cp team-single.html $DEPLOYPATH
+    - /bin/cp team.html $DEPLOYPATH
+    - /bin/cp why-choose-us.html $DEPLOYPATH
+    - rsync -av --exclude='.git' ./ $DEPLOYPATH
