@@ -261,7 +261,7 @@
                                                 data-splitin="none" 
                                                 data-splitout="none" 
                                                 data-responsive_offset="on">
-                                                A GLOBAL LEADER IN INFRASTRUCTURE
+                                                WELCOME TO GOMZE DEVELOPMENTS
                                             </div>
 
                                             <div class="tp-caption tp-resizeme text-white font-heading font-weight-700"
@@ -413,7 +413,7 @@
                                          <!-- Slide 3 -->
                                         <li data-transition="random">
                                             <!-- Main Image -->
-                                            <img src="assets/img/slider/Slider Crib 2.png" alt="" data-bgposition="center center" data-no-retina>
+                                            <img src="assets/img/slider/Slider Crib 3.png" alt="" data-bgposition="center center" data-no-retina>
                                            
                                             <!-- Layers -->
                                             <div class="tp-caption tp-resizeme text-white font-heading font-weight-600 text-right"
@@ -1450,47 +1450,44 @@
 <script src="includes/rev-slider/js/extensions/revolution.extension.video.min.js"></script>
 
 <script>
-$(document).ready(function() {
-    // Common carousel options
-    const carouselOptions = {
-        loop: true,
-        margin: 30,
-        nav: true,
-        dots: true,
-        autoplay: true,
-        autoplayTimeout: 1000,   // 1 second interval
-        autoplaySpeed: 500,      // Fast but smooth transition
-        autoplayHoverPause: false,
-        smartSpeed: 500,
-        touchDrag: false,
-        mouseDrag: false,
-        pullDrag: false,
-        freeDrag: false,
-        responsive: {
-            0: {
-                items: 1
+    $(document).ready(function () {
+        // Optimized carousel options
+        const carouselOptions = {
+            loop: true, // Infinite scrolling
+            margin: 30, // Space between items
+            nav: true, // Enable navigation buttons
+            dots: true, // Show navigation dots
+            autoplay: true, // Automatic sliding
+            autoplayTimeout: 4000, // 4 seconds between slides
+            autoplaySpeed: 800, // Smooth transition (0.8 seconds)
+            autoplayHoverPause: true, // Pause autoplay on hover
+            smartSpeed: 1000, // Smooth and consistent transition speed
+            touchDrag: true, // Enable touch dragging
+            mouseDrag: true, // Enable mouse dragging
+            responsive: {
+                0: {
+                    items: 1 // Show 1 item on small screens
+                },
+                600: {
+                    items: 2 // Show 2 items on medium screens
+                },
+                1000: {
+                    items: 3 // Show 3 items on larger screens
+                },
+                1400: {
+                    items: 4 // Show 4 items on extra-large screens
+                }
             },
-            600: {
-                items: 2
-            },
-            1000: {
-                items: 4
-            }
-        },
-        navText: [
-            '<i class="fa fa-angle-left"></i>',
-            '<i class="fa fa-angle-right"></i>'
-        ]
-    };
-
-    // Initialize both carousels
-    $('.row-project .owl-carousel').owlCarousel(carouselOptions);
-
-    // Force start autoplay immediately
-    $('.row-project .owl-carousel').trigger('play.owl.autoplay');
-});
-</script>
-
-</body>
-</html>
+            navText: [
+                '<i class="fa fa-angle-left" aria-label="Previous slide"></i>',
+                '<i class="fa fa-angle-right" aria-label="Next slide"></i>'
+            ],
+            lazyLoad: true, // Load images only when they appear
+        };
+    
+        // Initialize carousel
+        $('.row-project .owl-carousel').owlCarousel(carouselOptions);
+    });
+    </script>
+    
 
