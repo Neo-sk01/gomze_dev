@@ -224,7 +224,7 @@
                         success: function( msg ) {
                             var result, cls;                            
                             if ( msg === 'Success' ) {                                
-                                result = 'Message Sent Successfully To Email Administrator. ( You can change the email management a very easy way to get the message of customers in the user manual )';
+                                result = 'Message Sent Successfully.)';
                                 cls = 'msg-success';
                             } else {
                                 result = 'Error sending email.';

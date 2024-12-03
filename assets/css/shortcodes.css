@@ -411,7 +411,7 @@
 .themesflat-testimonials .list-star i { color: #4287f5; letter-spacing: -0.5px; }
 
 /* Has width */
-.themesflat-testimonials.has-width.w100 .icon-wrap { width: 100px; height: 100px; line-height: 100px; font-size: 32px; color: #4287f5; background-color: transparent; }
+.themesflat-testimonials.has-width.w100 .icon-wrap { width: 100px; height: 100px; line-height: 100px; font-size: 32px; color: #4287f5; background-color: tra; }
 .themesflat-testimonials.has-width.w35 .icon-wrap { width: 35px; height: 35px;  line-height: 35px; font-size: 18px; color: #fff; background-color: #4287f5; display: inline-block; }
 
 /* Circle */
@@ -422,9 +422,9 @@
 
 /* Style 1 */
 .themesflat-testimonials.style-1 .text { margin-top: 41px; }
-.themesflat-testimonials.style-1 .text p { font-size: 16px; line-height: 38px;  color: #fefefe; font-style: italic; }
+.themesflat-testimonials.style-1 .text p { font-size: 16px; line-height: 38px;  color: #ffffff; font-style: italic; }
 .themesflat-testimonials.style-1 .sep { margin-top: 16px; }
-.themesflat-testimonials.style-1 .name { font-size: 16px; line-height: 32px; color: #fff; margin: 33px 0px 0px 0px; }
+.themesflat-testimonials.style-1 .name { font-size: 16px; line-height: 32px; color: #ffffff; margin: 33px 0px 0px 0px; }
 
 /* Style 2 */
 .themesflat-testimonials.style-2 .testimonial-item { padding-top: 45px; }

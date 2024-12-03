@@ -1113,3 +1113,35 @@ body.page #main-content { padding-top: 0; padding-bottom: 0; }
 
 }
 
+
+@media (max-width: 768px) {
+    .row-about .row.equalize {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .row-about .col-md-6 {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    
+    .row-about .half-background {
+        order: -1;
+    }
+    
+    .row-about .themesflat-content-box {
+        margin: 0 10% !important;
+    }
+    
+    .row-about .themesflat-spacer {
+        display: none;
+    }
+    
+    .row-about .half-background img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
